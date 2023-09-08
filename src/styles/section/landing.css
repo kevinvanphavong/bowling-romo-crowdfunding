@@ -1,0 +1,52 @@
+@import "../variables.css";
+
+.section-landing__text {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 2em;
+}
+
+.section-landing__text * {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.section-landing__text h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white-color);
+    text-shadow: 2px 2px 2px var(--transparent-color);
+    color: transparent;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.section-landing__text p {
+    max-width: 600px;
+    color: var(--white-color);
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.section-landing__text .city-name {
+    padding: 0.25em 0.5em;
+    margin: 1em 0;
+    border: 2px solid var(--white-color);
+    border-radius: 10px;
+    background: var(--linear-gradient);
+    white-space: nowrap;
+}
+
+.section-landing__logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transform: rotate(20deg);
+    top: -75px;
+    right: -75px;
+}

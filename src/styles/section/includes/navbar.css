@@ -1,0 +1,51 @@
+@import "src/styles/variables.css";
+
+.navbar {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    .navbar {
+        width: 100%;
+        padding: 1em;
+        position: fixed;
+        z-index: 2;
+        background-color: var(--shadow-color);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar * {
+        color: var(--white-color);
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .navbar a:hover {
+        text-shadow: 2px 2px 4px var(--text-shadow-color);
+    }
+
+    .navbar a {
+        background: var(--linear-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.25em;
+        font-weight: 500;
+    }
+
+    .navbar p {
+        width: fit-content;
+        animation: 8s slide linear;
+        animation-iteration-count: infinite;
+        white-space: nowrap;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-260%);
+        }
+    }
+}

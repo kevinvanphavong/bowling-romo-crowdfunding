@@ -1,0 +1,18 @@
+@import "src/styles/variables.css";
+
+@media screen and (max-width: 500px) {
+    .section-novelties-bloc__image {
+        min-width: 100%;
+    }
+
+    .section-history-bowling-blois__text {
+        top: unset;
+        left: 10px;
+        bottom: -20px;
+    }
+
+    .section-history-bowling-blois__image-ceo {
+        right: -10px;
+    }
+}
+

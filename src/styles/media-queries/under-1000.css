@@ -1,0 +1,11 @@
+@import "src/styles/variables.css";
+
+@media screen and (max-width: 1000px) {
+    .section-introducing {
+        flex-direction: column;
+    }
+
+    .section-introducing__image, .section-introducing__text {
+        width: 100%;
+    }
+}

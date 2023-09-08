@@ -1,0 +1,56 @@
+@import "src/styles/variables.css";
+
+.section-fundings {
+    flex-direction: column;
+    padding: 3em 0;
+    grid-gap: 2em;
+}
+
+.section-fundings__title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.section-fundings-bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.section-fundings-bloc__image {
+    border-radius: var(--radius);
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: var(--shadow-color) 2px 2px 4px;
+}
+
+.section-fundings-bloc__text {
+    max-width: 50%;
+    width: 100%;
+    color: var(--white-color);
+    padding: 1em;
+    border: 2px solid var(--transparent-color);
+    border-radius: var(--radius);
+    background: var(--linear-gradient);
+    box-shadow: var(--shadow-color) 2px 2px 4px;
+}
+
+
+.section-fundings-for-decoration .section-fundings-bloc__image {
+    align-self: flex-start;
+}
+.section-fundings-for-decoration .section-fundings-bloc__text {
+    transform: translateY(-20%);
+    align-self: flex-end;
+}
+
+.section-fundings-for-bowling .section-fundings-bloc__image {
+    align-self: flex-end;
+}
+.section-fundings-for-bowling .section-fundings-bloc__text {
+    transform: translateY(-20%);
+    align-self: flex-start;
+}

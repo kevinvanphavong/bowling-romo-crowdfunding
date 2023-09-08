@@ -1,0 +1,46 @@
+@import "src/styles/variables.css";
+
+.section-novelties {
+    padding: 3em 0;
+    flex-direction: column;
+    grid-gap: 1em;
+}
+
+.section-novelties-bloc {
+    display: flex;
+    grid-gap: 1em;
+    padding: 2em;
+    width: 100%;
+    overflow: scroll;
+}
+
+.section-novelties-bloc__image {
+    min-width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border: 4px solid var(--transparent-color);
+    border-radius: var(--radius);
+}
+
+.section-novelties__title {
+    text-align: center;
+}
+
+.section-novelties__text {
+    color: var(--white-color);
+    margin: 0 auto;
+}
+
+.section-novelties__text--first {
+    min-width: 300px;
+    text-align: center;
+}
+
+.section-novelties__list {
+    list-style: none;
+    line-height: 2em;
+}
+
+.section-novelties__icon {
+    width: 30px;
+}

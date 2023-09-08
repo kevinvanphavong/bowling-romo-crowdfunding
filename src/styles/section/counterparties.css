@@ -1,0 +1,48 @@
+@import "src/styles/variables.css";
+
+.section-counterparties {
+    flex-direction: column;
+    padding: 3em 0;
+    grid-gap: 2em;
+}
+
+.section-counterparties__title {
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.section-counterparties__text {
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-counterparties-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+.section-counterparties-bloc__image {
+    width: 400px;
+    min-width: 250px;
+    transition: all 0.5s;
+}
+
+.section-counterparties-bloc__image:hover {
+    box-shadow: 2px 2px 4px var(--shadow-color);
+    transform: scale(1.05);
+}
+
+.section-counterparties__link {
+    text-decoration: none;
+    color: #8C3A32;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+.section-counterparties__link:hover {
+    text-shadow: 2px 2px 4px var(--text-shadow-color);
+}

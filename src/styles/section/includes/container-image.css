@@ -1,0 +1,30 @@
+.js-container-image {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background: var(--text-shadow-color);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.js-container-image--hidden {
+    display: none;
+}
+
+.js-container-image__selected-image {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: var(--radius);
+}
+
+.js-container-image__closed-button {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 1em;
+    right: 1em;
+}

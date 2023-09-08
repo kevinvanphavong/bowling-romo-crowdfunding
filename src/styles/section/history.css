@@ -1,0 +1,55 @@
+@import "src/styles/variables.css";
+
+.section-history {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+    grid-gap: 1em;
+}
+
+.section-history__title {
+    text-align: center;
+}
+
+.section-history__text {
+    text-align: justify;
+    color: var(--primary-text-color);
+}
+
+.section-history-bowling-blois {
+    height: auto;
+    width: 80%;
+    margin: 3em auto;
+    position: relative;
+}
+
+.section-history-bowling-blois__text {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    padding: 0.5em 0.75em;
+    border: 2px solid var(--transparent-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-color) 2px 2px 4px;
+    background: var(--linear-gradient);
+    color: var(--white-color);
+    font-weight: 300;
+    transform: rotate(350deg);
+}
+
+.section-history-bowling-blois__image-bowling {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-color) 2px 2px 4px;
+}
+
+.section-history-bowling-blois__image-ceo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--transparent-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-color) 2px 2px 4px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}

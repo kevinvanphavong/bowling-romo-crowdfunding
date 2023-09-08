@@ -1,0 +1,55 @@
+@import "src/styles/variables.css";
+
+@media screen and (max-width: 800px) {
+    .section-landing__logo {
+        right: 0;
+    }
+
+    .section-history-bowling-blois {
+        width: 100%;
+    }
+
+    .section-history-bowling-blois__image-bowling {
+        height: 400px;
+        object-fit: cover;
+    }
+    .section-history-bowling-blois__image-ceo {
+        right: -20px;
+    }
+
+    .section-history-bowling-blois__text {
+        left: 20px;
+        transform: rotate(0deg);
+    }
+
+    .section-helping-us {
+        grid-gap: 0;
+    }
+
+    .section-helping-us-group-bloc {
+        flex-direction: column;
+    }
+
+    .section-helping-bloc {
+        width: 100%;
+        grid-gap: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .section-helping-bloc:not(:last-child) {
+        border-bottom: 1px solid var(--white-color);
+    }
+
+
+    .section-fundings-bloc__text {
+        align-self: center;
+        max-width: 100%;
+    }
+
+    .section-fundings-for-bowling .section-fundings-bloc__image,
+    .section-fundings-for-decoration .section-fundings-bloc__image {
+        align-self: center;
+        width: 90%;
+    }
+}

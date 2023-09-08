@@ -1,0 +1,55 @@
+@import "src/styles/variables.css";
+@import "section/landing.css";
+@import "section/introducing.css";
+@import "section/history.css";
+@import "section/helping-us.css";
+@import "section/fundings.css";
+@import "section/novelties.css";
+@import "section/counterparties.css";
+@import "section/includes/navbar.css";
+@import "section/includes/container-image.css";
+@import "media-queries/under-1000.css";
+@import "media-queries/under-800.css";
+@import "media-queries/under-500.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--white-color);
+}
+
+h2 {
+    color: var(--primary-text-color) !important;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.wrapper-background {
+    display: flex;
+    min-height: 500px;
+    background-image: url("../../src/images/background-bowling-blois.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-background--curved-down {
+    clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+.wrapper-background--curved-up {
+    clip-path: ellipse(140% 100% at 50% 100%);
+}
